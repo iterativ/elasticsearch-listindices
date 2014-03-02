@@ -13,7 +13,7 @@ public class ListIndicesPlugin extends AbstractPlugin {
     }
 
     @Override public String description() {
-        return "ListIndicesPlugin plugin";
+        return "ListIndicesPlugin";
     }
 
     @Override public Collection<Class<? extends Module>> modules() {
