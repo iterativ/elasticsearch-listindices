@@ -4,7 +4,7 @@ List all indices existing in an elasticsearch node.
 
 ### Install ListIndices
 
-bin/plugin --url file:///.... ListIndicesPlugin-1.0-plugin.zip --install listindices
+bin/plugin --url https://github.com/iterativ/elasticsearch-listindices/blob/master/binary/ListIndicesPlugin-1.0-SNAPSHOT.zip --install listindices
 
 ### Building & Installing ListIndices from source
 
