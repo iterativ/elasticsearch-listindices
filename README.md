@@ -1,6 +1,6 @@
 ## ListIndices elasticsearch plugin
 
-List all index names in a cluster.
+List all indices existing in an elasticsearch node.
 
 ### Install ListIndices
 
@@ -17,7 +17,7 @@ $ bin/plugin --url file:///<path-to-plugin>/target/releases/ListIndicesPlugin-1.
 ### Using ListIndices
 
 Request indices:
-```json
+```rest
 GET /_indices
 ```
 
