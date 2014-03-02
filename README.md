@@ -1,12 +1,12 @@
-# ListIndices elasticsearch plugin 
+## ListIndices elasticsearch plugin
 
 List all index names in a cluster.
 
-# Install ListIndices
+### Install ListIndices
 
 bin/plugin --url file:///.... ListIndicesPlugin-1.0-plugin.zip --install listindices
 
-# Building & Installing ListIndices
+### Building & Installing ListIndices from source
 
 ```bash
 $ mvn package
@@ -14,17 +14,15 @@ $ mvn package
 $ bin/plugin --url file:///<path-to-plugin>/target/releases/ListIndicesPlugin-1.0-SNAPSHOT-plugin.zip --install listindices
 ```
 
-# Installing ListIndices 
+### Using ListIndices
 
-```bash
-
+Request indices:
+```json
+GET /_indices
 ```
 
-# Using ListIndices 
-
-GET /_indices
-
 Example output:
+```json
 {
    "indices": [
       ".marvel-2014.02.26",
@@ -37,3 +35,4 @@ Example output:
       "itemresults"
    ]
 }
+```
