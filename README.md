@@ -4,7 +4,9 @@ List all indices existing in an elasticsearch node.
 
 ### Install ListIndices
 
+```bash
 bin/plugin --url https://github.com/iterativ/elasticsearch-listindices/blob/master/binary/ListIndicesPlugin-1.0-SNAPSHOT.zip --install listindices
+```
 
 ### Building & Installing ListIndices from source
 
@@ -12,6 +14,12 @@ bin/plugin --url https://github.com/iterativ/elasticsearch-listindices/blob/mast
 $ mvn package
 # in elasticsearch home
 $ bin/plugin --url file:///<path-to-plugin>/target/releases/ListIndicesPlugin-1.0-SNAPSHOT-plugin.zip --install listindices
+```
+
+### Uninstall Listindices plugin
+
+```bash
+$ bin/plugin --remove listindices
 ```
 
 ### Using ListIndices
