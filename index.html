@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>elasticsearch-listindices by iterativ</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>elasticsearch-listindices</h1>
+        <p>List all indices existing in an elasticsearch node</p>
+
+        <p class="view"><a href="https://github.com/iterativ/elasticsearch-listindices">View the Project on GitHub <small>iterativ/elasticsearch-listindices</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/iterativ/elasticsearch-listindices/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/iterativ/elasticsearch-listindices/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/iterativ/elasticsearch-listindices">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h2>
+<a name="listindices-elasticsearch-plugin" class="anchor" href="#listindices-elasticsearch-plugin"><span class="octicon octicon-link"></span></a>ListIndices elasticsearch plugin</h2>
+
+<p>List all indices existing in an elasticsearch node.</p>
+
+<h3>
+<a name="install-listindices" class="anchor" href="#install-listindices"><span class="octicon octicon-link"></span></a>Install ListIndices</h3>
+
+<p>bin/plugin --url file:///.... ListIndicesPlugin-1.0-plugin.zip --install listindices</p>
+
+<h3>
+<a name="building--installing-listindices-from-source" class="anchor" href="#building--installing-listindices-from-source"><span class="octicon octicon-link"></span></a>Building &amp; Installing ListIndices from source</h3>
+
+<div class="highlight highlight-bash"><pre><span class="nv">$ </span>mvn package
+<span class="c"># in elasticsearch home</span>
+<span class="nv">$ </span>bin/plugin --url file:///&lt;path-to-plugin&gt;/target/releases/ListIndicesPlugin-1.0-SNAPSHOT-plugin.zip --install listindices
+</pre></div>
+
+<h3>
+<a name="using-listindices" class="anchor" href="#using-listindices"><span class="octicon octicon-link"></span></a>Using ListIndices</h3>
+
+<p>Request indices:</p>
+
+<div class="highlight highlight-rest"><pre>GET /_indices
+</pre></div>
+
+<p>Example output:</p>
+
+<div class="highlight highlight-json"><pre><span class="p">{</span>
+   <span class="nt">"indices"</span><span class="p">:</span> <span class="p">[</span>
+      <span class="s2">".marvel-2014.02.26"</span><span class="p">,</span>
+      <span class="s2">".marvel-2014.02.27"</span><span class="p">,</span>
+      <span class="s2">".marvel-2014.02.28"</span><span class="p">,</span>
+      <span class="s2">".marvel-2014.03.01"</span><span class="p">,</span>
+      <span class="s2">".marvel-2014.03.02"</span><span class="p">,</span>
+      <span class="s2">"events"</span><span class="p">,</span>
+      <span class="s2">"haystack"</span><span class="p">,</span>
+      <span class="s2">"itemresults"</span>
+   <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/iterativ">iterativ</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
